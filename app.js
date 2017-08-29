@@ -3,6 +3,8 @@ var path = require('path');
 var logger = require('morgan');
 var dotenv = require('dotenv').config()
 
+const db = require('./config/db')
+
 var index = require('./routes/index');
 
 var app = express();
