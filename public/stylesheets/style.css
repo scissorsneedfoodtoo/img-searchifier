@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+li {
+  list-style-type: none;
+  padding-left: 40px;
+}
+
+.first-li,
+.last-li {
+  padding-left: 20px;
+}

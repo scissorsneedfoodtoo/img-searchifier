@@ -14,11 +14,24 @@ block content
         | 3) I can get a list of the most recently submitted search strings.
 
     h3 Example usage:
-    code
+    code https://imgsearchifier.herokuapp.com/search/mr%20poopy%20butthole
     br
-    code
+    code https://imgsearchifier.herokuapp.com/latest
 
-    h3 Example output:
-    code
-    br
-    code
+    h3 Example search output:
+    code [
+    li(class='first-li'): code {
+    li: code    "url": "https://ih1.redbubble.net/image.170071318.1044/ap,550x550,12x16,1,transparent,t.u4.png",
+    li: code    "snippet": "Ooh Wee! Mr. Poopy Butthole\" Art Prints by amazitova | Redbubble",
+    li: code    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1UDh7xhsm6pWB1jBoRYz0n1HxhRtH7kQyJN4KEEW1ki67w5GMNxaP3xwD",
+    li: code    "context": "https://www.redbubble.com/people/amazitova/works/19811044-ooh-wee-mr-poopy-butthole?p=art-print"
+    li(class='last-li'): code },...
+    code ]
+
+    h3 Example latest output:
+    code [
+    li(class='first-li'): code {
+    li: code "term": "mr poopy butthole",
+    li: code "when": "2017-08-29T10:21:37.874Z"
+    li(class='last-li'): code },...
+    code ]
