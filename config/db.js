@@ -2,4 +2,4 @@ const connection = 'mongodb://' + process.env.DB_USER + ':' + process.env.PASS +
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
-exports.db = mongoose.connect(connection, { useMongoClient: true })
+exports.db = mongoose.connect(connection, { useNewUrlParser: true })
